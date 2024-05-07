@@ -1,0 +1,21 @@
+<div *ngIf="users.length > 0; else noUsers">
+  <h2>List of Users</h2>
+  <ul>
+    <li *ngFor="let user of users">
+      <strong>{{ user.firstName }} {{ user.lastName }}</strong> ({{ user.email }})
+      <button (click)="onAddUser()">Add</button>
+      <button (click)="onEdit(user._id)">Edit</button>
+      <button (click)="onDelete(user._id)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noUsers>
+  <p>No users found.</p>
+</ng-template>
+<div class="container-xxl py-5">
+  <!-- Your existing form code -->
+
+  <!-- Add the button here -->
+  <button (click)="goToBookingList()">Booking List</button>
+</div>

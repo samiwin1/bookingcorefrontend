@@ -1,0 +1,47 @@
+<form (ngSubmit)="onSubmit()" #offerForm="ngForm">
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" [(ngModel)]="offer.name" name="name" required />
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <textarea id="description" [(ngModel)]="offer.description" name="description" required></textarea>
+    </div>
+    <div>
+        <label for="price">Price:</label>
+        <input id="price" type="number" [(ngModel)]="offer.price" name="price" required />
+    </div>
+    <div>
+        <label for="startDate">Start Date:</label>
+        <input id="startDate" type="date" [(ngModel)]="offer.startDate" name="startDate" required />
+    </div>
+    <div>
+        <label for="endDate">End Date:</label>
+        <input id="endDate" type="date" [(ngModel)]="offer.endDate" name="endDate" required />
+    </div>
+    <div>
+        <label for="hotelStars">Hotel Stars:</label>
+        <input id="hotelStars" type="number" [(ngModel)]="offer.hotelStars" name="hotelStars" required />
+    </div>
+    <div>
+        <label for="place">Place:</label>
+        <input id="place" [(ngModel)]="offer.place" name="place" required />
+    </div>
+    <div>
+        <label for="transport">Transport:</label>
+        <input id="transport" [(ngModel)]="offer.transport" name="transport" required />
+    </div>
+    <div>
+        <label for="goingOutTimesPerWeek">Going Out Times Per Week:</label>
+        <input id="goingOutTimesPerWeek" type="number" [(ngModel)]="offer.goingOutTimesPerWeek" name="goingOutTimesPerWeek" required />
+    </div>
+    <div>
+        <label for="goingOutType">Going Out Type:</label>
+        <input id="goingOutType" [(ngModel)]="offer.goingOutType" name="goingOutType" required />
+    </div>
+    <div>
+        <label for="imageUrl">Image URLs:</label>
+        <input id="imageUrl" [(ngModel)]="offer.imageUrl" name="imageUrl" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>

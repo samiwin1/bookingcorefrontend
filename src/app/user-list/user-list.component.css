@@ -1,0 +1,64 @@
+/* List container */
+div {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* User list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* User information */
+li strong {
+  flex-grow: 1;
+  margin-right: 15px;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* No users template */
+p {
+  text-align: center;
+  color: #666;
+}

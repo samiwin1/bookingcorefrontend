@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstname">firstname:</label>
+      <input type="text" id="firstname" name="firstname" [(ngModel)]="formData.firstName" required>
+    </div>
+    <div>
+      <label for="lastName">lastName:</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName">
+    </div>
+    <div>
+      <label for="password">password:</label>
+      <input type="text" id="password" name="password" [(ngModel)]="formData.password">
+    </div>
+    <div>
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" [(ngModel)]="formData.email">
+      </div>
+      <div>
+        <label for="role">role:</label>
+        <input type="text" id="role" name="role" [(ngModel)]="formData.role">
+      </div>
+    <button type="submit">Submit</button>
+  </form>
+  
